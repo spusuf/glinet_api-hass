@@ -1,0 +1,22 @@
+{
+    "domain": "glinet_api",
+    "name": "GL-iNet API",
+    "codeowners": [
+        "@spusuf"
+    ],
+    "config_flow": true,
+    "dhcp": [
+        {"macaddress": "9483C4*"},
+        {"macaddress": "44D16E*"},
+        {"hostname": "gl-*"}
+    ],  
+    "documentation": "https://github.com/spusuf/glinet_api-hass",
+    "integration_type": "hub",
+    "iot_class": "local_polling",
+    "issue_tracker": "https://github.com/spusuf/glinet_api-hass/issues",
+    "requirements": [
+        "httpx>=0.20.0",
+        "passlib>=1.7.4"
+    ],
+    "version": "0.0.1"
+}
