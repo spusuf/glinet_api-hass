@@ -1,0 +1,6 @@
+{
+  "name": "GL-iNet Router API",
+  "content_in_root": false,
+  "homeassistant": "2024.1.0b0",
+  "render_readme": true
+}
