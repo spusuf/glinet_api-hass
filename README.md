@@ -47,6 +47,9 @@ I don't list entity list spam and therefore a lot of the information is in the a
 | Upload Speed [7]        | Instantaneous upload speed        | Upload speed in Megabits/second                 |
 
 ## Groups
+There are two types of groups during startup:
+Device groups: Combine the multiple interface MACs of a single device (e.g your 5GHz WiFi MAC and your 2.4GHz or Ethernet) so they dont show up as multiple devices or show as Away when switching connection.
+Guest groups: Combine multiple devices into a single entity to track person (like how Home Assistant allows for People/users), this removes the clutter of multiple ungrouped devices being automatically tracked.  
 
 ## Secure Mode
 
