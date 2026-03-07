@@ -3,6 +3,7 @@
 Yet another Home Assistant integration for GL-iNet routers. Written from the ground up, and uses the API directly not the python library.
 
 Highlights: Supports MLO, autodiscovery, automatic device tracking, HTTPS, and more.
+![Showcase of router controls](https://github.com/spusuf/glinet_api-hass/blob/main/preview/preview2.png)
 
 ## Installation
 
@@ -13,6 +14,8 @@ Being listed on HACS by default and an "add to HACS" button is pending review.
 ## Features
 
 I don't list entity list spam and therefore a lot of the information is in the attributes of the sensor it relates to (click the 3 dots then attributes or use the State content field of the Tile card to see these).
+
+![Dashboard example with controls](https://github.com/spusuf/glinet_api-hass/blob/main/preview/preview1.png)
 
 ### Router
 
