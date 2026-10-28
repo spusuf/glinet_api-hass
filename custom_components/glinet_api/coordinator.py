@@ -198,9 +198,12 @@ class GLiNetDataUpdateCoordinator(DataUpdateCoordinator):
 
             now = dt_util.utcnow()
             if self._last_fw_check is None or now - self._last_fw_check > timedelta(hours=6):
+                # Stamp the attempt, not just a success: when the router cannot reach the
+                # update server the call times out (10 s), and retrying every poll made
+                # every cycle 10 s slower and logged an error each time.
+                self._last_fw_check = now
                 try:
                     self._cached_fw_res = await self.api.upgrade_check_firmware_online()
-                    self._last_fw_check = now
                 except Exception as err:
                     _LOGGER.debug("Error checking firmware: %s", err)
             
